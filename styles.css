@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0e0e0e;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar,
+.left-navbar-items,
+.left-navbar-items>ul,
+.right-navbar-items {
+  display: flex;
+  column-gap: 1.2rem;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.navbar {
+  padding: 1rem 5rem;
+  position: fixed;
+  width: 100%;
+  top: 1;
+  left: auto;
+  background-color: var(--color-dark-bg);
+  z-index: 1000;
+}
+
+.title {
+  color: rgb(244, 236, 236);
+  position:relative;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  /* letter-spacing: ; */
+  font-weight: 600;
+  min-height: 60px;
+  padding-top: 10px;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-items {
+  color: #a0a4af;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-items:hover {
+  color: rgb(255, 255, 255);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.441);
+  padding: 6px 6px 6px 10px;
+  border-radius: 4px;
+}
+
+input {
+  background-color: #0e0e0e;
+  border: none;
+  color: #9ba3b4;
+}
+
+input:focus {
+  outline: none;
+}
+
+.download-button {
+  padding: 10px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(48, 120, 222);
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e66305;
+}
+
+.new-update {
+  color: #898d96;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.new-update-info>a {
+  color: #0585f5;
+}
+
+.new-update-2{
+  
+    color: rgb(34, 114, 226);
+    background-color: transparent;
+    background-origin:none;
+  
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+.home-page {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page>div {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.home-page-left {
+  width: 30vw;
+}
+
+.home-page-left>p:first-child {
+  background-color: rgba(255, 255, 255, 0.04);
+  width: fit-content;
+  color: #9ba3b4;
+  padding: 10px 10px;
+  border-radius: 1.5rem;
+  border: 1px solid #9ba3b422;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.home-page-left>p:nth-of-type(2) {
+  color: white;
+  width: 20vw;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.home-page-left>button {
+  padding: 10px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: #007be7;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.home-page-left>button:hover {
+  background-color: #006cca;
+}
+
+.home-page-left>p:nth-of-type(3) {
+  color: #9ba3b4;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.home-page-left>p:nth-of-type(3)>a {
+  color: #40a6ff;
+  font-size: 0.9rem;
+}
+
+.home-page-left>p:nth-of-type(4) {
+  font-size: 0.7rem;
+  color: #9ba3b4;
+  margin-top: 0.9rem;
+}
+
+.home-page-left>p:nth-of-type(4)>a {
+  color: #40a6ff;
+}
+
+
+
+
+
+/* next  */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.language-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2C2C2C;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.language-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.language-icon span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+ .container-2 {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
